@@ -1,0 +1,829 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="pl.akademiaqa.tests.space.CreateSpaceWithParamsTest" time="6.46" tests="5" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="D:\Cucumber\Code\STBClickUp\target\test-classes;D:\Cucumber\Code\STBClickUp\target\classes;C:\Users\Agata\.m2\repository\io\rest-assured\rest-assured\4.5.0\rest-assured-4.5.0.jar;C:\Users\Agata\.m2\repository\org\codehaus\groovy\groovy\3.0.9\groovy-3.0.9.jar;C:\Users\Agata\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.9\groovy-xml-3.0.9.jar;C:\Users\Agata\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Agata\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Agata\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Agata\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Agata\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Agata\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Agata\.m2\repository\io\rest-assured\json-path\4.5.0\json-path-4.5.0.jar;C:\Users\Agata\.m2\repository\org\codehaus\groovy\groovy-json\3.0.9\groovy-json-3.0.9.jar;C:\Users\Agata\.m2\repository\io\rest-assured\rest-assured-common\4.5.0\rest-assured-common-4.5.0.jar;C:\Users\Agata\.m2\repository\io\rest-assured\xml-path\4.5.0\xml-path-4.5.0.jar;C:\Users\Agata\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\Agata\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Agata\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\Agata\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Agata\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\Agata\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Agata\.m2\repository\org\json\json\20211205\json-20211205.jar;C:\Users\Agata\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\Agata\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\Agata\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Agata\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Agata\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Agata\.m2\repository\org\assertj\assertj-core\3.22.0\assertj-core-3.22.0.jar;C:\Users\Agata\.m2\repository\io\qameta\allure\allure-junit5\2.17.2\allure-junit5-2.17.2.jar;C:\Users\Agata\.m2\repository\io\qameta\allure\allure-junit-platform\2.17.2\allure-junit-platform-2.17.2.jar;C:\Users\Agata\.m2\repository\io\qameta\allure\allure-java-commons\2.17.2\allure-java-commons-2.17.2.jar;C:\Users\Agata\.m2\repository\io\qameta\allure\allure-model\2.17.2\allure-model-2.17.2.jar;C:\Users\Agata\.m2\repository\io\qameta\allure\allure-test-filter\2.17.2\allure-test-filter-2.17.2.jar;C:\Users\Agata\.m2\repository\org\junit\platform\junit-platform-launcher\1.8.2\junit-platform-launcher-1.8.2.jar;C:\Users\Agata\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\Agata\.m2\repository\io\qameta\allure\allure-rest-assured\2.17.2\allure-rest-assured-2.17.2.jar;C:\Users\Agata\.m2\repository\io\qameta\allure\allure-attachments\2.17.2\allure-attachments-2.17.2.jar;C:\Users\Agata\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\Agata\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.1\jackson-databind-2.13.1.jar;C:\Users\Agata\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.1\jackson-annotations-2.13.1.jar;C:\Users\Agata\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.1\jackson-core-2.13.1.jar;C:\Users\Agata\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar;C:\Users\Agata\.m2\repository\org\slf4j\slf4j-simple\1.7.35\slf4j-simple-1.7.35.jar;C:\Users\Agata\.m2\repository\org\slf4j\slf4j-api\1.7.35\slf4j-api-1.7.35.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Warsaw"/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="PL"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17.0.5\bin"/>
+    <property name="sun.java.command" value="C:\Users\Agata\AppData\Local\Temp\surefire12520152801425959712\surefirebooter835323856736728511.jar C:\Users\Agata\AppData\Local\Temp\surefire12520152801425959712 2024-02-08T14-10-28_547-jvmRun1 surefire16144668759656877107tmp surefire_017036448185429620649tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="D:\Cucumber\Code\STBClickUp\target\test-classes;D:\Cucumber\Code\STBClickUp\target\classes;C:\Users\Agata\.m2\repository\io\rest-assured\rest-assured\4.5.0\rest-assured-4.5.0.jar;C:\Users\Agata\.m2\repository\org\codehaus\groovy\groovy\3.0.9\groovy-3.0.9.jar;C:\Users\Agata\.m2\repository\org\codehaus\groovy\groovy-xml\3.0.9\groovy-xml-3.0.9.jar;C:\Users\Agata\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Agata\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\Agata\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Agata\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\Agata\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\Agata\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\Agata\.m2\repository\io\rest-assured\json-path\4.5.0\json-path-4.5.0.jar;C:\Users\Agata\.m2\repository\org\codehaus\groovy\groovy-json\3.0.9\groovy-json-3.0.9.jar;C:\Users\Agata\.m2\repository\io\rest-assured\rest-assured-common\4.5.0\rest-assured-common-4.5.0.jar;C:\Users\Agata\.m2\repository\io\rest-assured\xml-path\4.5.0\xml-path-4.5.0.jar;C:\Users\Agata\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.8.2\junit-jupiter-api-5.8.2.jar;C:\Users\Agata\.m2\repository\org\opentest4j\opentest4j\1.2.0\opentest4j-1.2.0.jar;C:\Users\Agata\.m2\repository\org\junit\platform\junit-platform-commons\1.8.2\junit-platform-commons-1.8.2.jar;C:\Users\Agata\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Agata\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.8.2\junit-jupiter-params-5.8.2.jar;C:\Users\Agata\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Agata\.m2\repository\org\json\json\20211205\json-20211205.jar;C:\Users\Agata\.m2\repository\com\github\javafaker\javafaker\1.0.2\javafaker-1.0.2.jar;C:\Users\Agata\.m2\repository\org\apache\commons\commons-lang3\3.5\commons-lang3-3.5.jar;C:\Users\Agata\.m2\repository\org\yaml\snakeyaml\1.23\snakeyaml-1.23-android.jar;C:\Users\Agata\.m2\repository\com\github\mifmif\generex\1.0.2\generex-1.0.2.jar;C:\Users\Agata\.m2\repository\dk\brics\automaton\automaton\1.11-8\automaton-1.11-8.jar;C:\Users\Agata\.m2\repository\org\assertj\assertj-core\3.22.0\assertj-core-3.22.0.jar;C:\Users\Agata\.m2\repository\io\qameta\allure\allure-junit5\2.17.2\allure-junit5-2.17.2.jar;C:\Users\Agata\.m2\repository\io\qameta\allure\allure-junit-platform\2.17.2\allure-junit-platform-2.17.2.jar;C:\Users\Agata\.m2\repository\io\qameta\allure\allure-java-commons\2.17.2\allure-java-commons-2.17.2.jar;C:\Users\Agata\.m2\repository\io\qameta\allure\allure-model\2.17.2\allure-model-2.17.2.jar;C:\Users\Agata\.m2\repository\io\qameta\allure\allure-test-filter\2.17.2\allure-test-filter-2.17.2.jar;C:\Users\Agata\.m2\repository\org\junit\platform\junit-platform-launcher\1.8.2\junit-platform-launcher-1.8.2.jar;C:\Users\Agata\.m2\repository\org\junit\platform\junit-platform-engine\1.8.2\junit-platform-engine-1.8.2.jar;C:\Users\Agata\.m2\repository\io\qameta\allure\allure-rest-assured\2.17.2\allure-rest-assured-2.17.2.jar;C:\Users\Agata\.m2\repository\io\qameta\allure\allure-attachments\2.17.2\allure-attachments-2.17.2.jar;C:\Users\Agata\.m2\repository\org\freemarker\freemarker\2.3.31\freemarker-2.3.31.jar;C:\Users\Agata\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.13.1\jackson-databind-2.13.1.jar;C:\Users\Agata\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.13.1\jackson-annotations-2.13.1.jar;C:\Users\Agata\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.13.1\jackson-core-2.13.1.jar;C:\Users\Agata\.m2\repository\org\projectlombok\lombok\1.18.22\lombok-1.18.22.jar;C:\Users\Agata\.m2\repository\org\slf4j\slf4j-simple\1.7.35\slf4j-simple-1.7.35.jar;C:\Users\Agata\.m2\repository\org\slf4j\slf4j-api\1.7.35\slf4j-api-1.7.35.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Agata"/>
+    <property name="user.language" value="pl"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2022-10-18"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-17.0.5"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="D:\Cucumber\Code\STBClickUp"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="surefire.real.class.path" value="C:\Users\Agata\AppData\Local\Temp\surefire12520152801425959712\surefirebooter835323856736728511.jar"/>
+    <property name="user.script" value=""/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="17.0.5+9-LTS-191"/>
+    <property name="user.name" value="Agata"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Agata\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Agata\AppData\Local\Temp\"/>
+    <property name="java.version" value="17.0.5"/>
+    <property name="user.dir" value="D:\Cucumber\Code\STBClickUp"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-17.0.5\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;D:\app\Agata\product\11.2.0\dbhome_1\bin;C:\app\Agata\product\18.0.0\dbhomeXE\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\nodejs\;C:\ProgramData\chocolatey\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Java\jdk-17.0.5\bin;C:\Program Files\apache-maven-3.8.7\bin;C:\Users\Agata\AppData\Local\Microsoft\WindowsApps;C:\Users\Agata\AppData\Roaming\npm;C:\Users\Agata\.dotnet\tools;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.5+9-LTS-191"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="createSpaceTest(String)[1]" classname="pl.akademiaqa.tests.space.CreateSpaceWithParamsTest" time="1.894">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://api.clickup.com/api/v2/team/9005016801/space
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=pk_44666415_BQ3MDY22FN79DULVOS49C7RI9UT3LO73
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "Space1"
+}
+HTTP/1.1 200 OK
+Date: Thu, 08 Feb 2024 13:10:36 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+x-dns-prefetch-control: off
+expect-ct: max-age=0
+strict-transport-security: max-age=31536000; includeSubDomains
+x-download-options: noopen
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+access-control-allow-origin: *
+access-control-allow-credentials: true
+content-language: en-US
+x-datadog-trace-id: 7180747525212176906
+content-security-policy: frame-ancestors 'self'
+cache-control: no-cache, no-store
+pragma: no-cache
+expires: 0
+x-ratelimit-limit: 100
+x-ratelimit-remaining: 97
+x-ratelimit-reset: 1707397894
+Timing-Allow-Origin: *
+content-encoding: gzip
+x-received-from: shard-prod-eu-west-1-2
+
+{
+    "id": "90120427230",
+    "name": "Space1",
+    "color": null,
+    "private": false,
+    "avatar": null,
+    "admin_can_manage": null,
+    "statuses": [
+        {
+            "id": "p90120427230_rhgTsFEb",
+            "status": "to do",
+            "type": "open",
+            "orderindex": 0,
+            "color": "#87909e"
+        },
+        {
+            "id": "p90120427230_ZfIANbph",
+            "status": "complete",
+            "type": "closed",
+            "orderindex": 1,
+            "color": "#008844"
+        }
+    ],
+    "multiple_assignees": false,
+    "features": {
+        "due_dates": {
+            "enabled": true,
+            "start_date": true,
+            "remap_due_dates": true,
+            "remap_closed_due_date": false
+        },
+        "sprints": {
+            "enabled": false
+        },
+        "points": {
+            "enabled": false
+        },
+        "custom_items": {
+            "enabled": false
+        },
+        "checklists": {
+            "enabled": true
+        },
+        "zoom": {
+            "enabled": false
+        },
+        "milestones": {
+            "enabled": false
+        },
+        "remap_dependencies": {
+            "enabled": true
+        },
+        "dependency_warning": {
+            "enabled": true
+        },
+        "status_pies": {
+            "enabled": true
+        },
+        "emails": {
+            "enabled": true
+        }
+    },
+    "archived": false
+}
+Request method:	DELETE
+Request URI:	https://api.clickup.com/api/v2/space/90120427230
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=pk_44666415_BQ3MDY22FN79DULVOS49C7RI9UT3LO73
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 08 Feb 2024 13:10:37 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Server: nginx
+x-dns-prefetch-control: off
+expect-ct: max-age=0
+strict-transport-security: max-age=31536000; includeSubDomains
+x-download-options: noopen
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+access-control-allow-origin: *
+access-control-allow-credentials: true
+content-language: en-US
+x-datadog-trace-id: 5400276572159830181
+content-security-policy: frame-ancestors 'self'
+cache-control: no-cache, no-store
+pragma: no-cache
+expires: 0
+x-ratelimit-limit: 100
+x-ratelimit-remaining: 96
+x-ratelimit-reset: 1707397894
+Timing-Allow-Origin: *
+x-received-from: shard-prod-eu-west-1-2
+
+{
+    
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createSpaceTest(String)[2]" classname="pl.akademiaqa.tests.space.CreateSpaceWithParamsTest" time="1.275">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://api.clickup.com/api/v2/team/9005016801/space
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=pk_44666415_BQ3MDY22FN79DULVOS49C7RI9UT3LO73
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "@"
+}
+HTTP/1.1 200 OK
+Date: Thu, 08 Feb 2024 13:10:38 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+x-dns-prefetch-control: off
+expect-ct: max-age=0
+strict-transport-security: max-age=31536000; includeSubDomains
+x-download-options: noopen
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+access-control-allow-origin: *
+access-control-allow-credentials: true
+content-language: en-US
+x-datadog-trace-id: 1044821601823056543
+content-security-policy: frame-ancestors 'self'
+cache-control: no-cache, no-store
+pragma: no-cache
+expires: 0
+x-ratelimit-limit: 100
+x-ratelimit-remaining: 95
+x-ratelimit-reset: 1707397894
+Timing-Allow-Origin: *
+content-encoding: gzip
+x-received-from: shard-prod-eu-west-1-2
+
+{
+    "id": "90120427231",
+    "name": "@",
+    "color": null,
+    "private": false,
+    "avatar": null,
+    "admin_can_manage": null,
+    "statuses": [
+        {
+            "id": "p90120427231_1l3tiOU6",
+            "status": "to do",
+            "type": "open",
+            "orderindex": 0,
+            "color": "#87909e"
+        },
+        {
+            "id": "p90120427231_EOzQpwjM",
+            "status": "complete",
+            "type": "closed",
+            "orderindex": 1,
+            "color": "#008844"
+        }
+    ],
+    "multiple_assignees": false,
+    "features": {
+        "due_dates": {
+            "enabled": true,
+            "start_date": true,
+            "remap_due_dates": true,
+            "remap_closed_due_date": false
+        },
+        "sprints": {
+            "enabled": false
+        },
+        "points": {
+            "enabled": false
+        },
+        "custom_items": {
+            "enabled": false
+        },
+        "checklists": {
+            "enabled": true
+        },
+        "zoom": {
+            "enabled": false
+        },
+        "milestones": {
+            "enabled": false
+        },
+        "remap_dependencies": {
+            "enabled": true
+        },
+        "dependency_warning": {
+            "enabled": true
+        },
+        "status_pies": {
+            "enabled": true
+        },
+        "emails": {
+            "enabled": true
+        }
+    },
+    "archived": false
+}
+Request method:	DELETE
+Request URI:	https://api.clickup.com/api/v2/space/90120427231
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=pk_44666415_BQ3MDY22FN79DULVOS49C7RI9UT3LO73
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 08 Feb 2024 13:10:39 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Server: nginx
+x-dns-prefetch-control: off
+expect-ct: max-age=0
+strict-transport-security: max-age=31536000; includeSubDomains
+x-download-options: noopen
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+access-control-allow-origin: *
+access-control-allow-credentials: true
+content-language: en-US
+x-datadog-trace-id: 1226033259020317936
+content-security-policy: frame-ancestors 'self'
+cache-control: no-cache, no-store
+pragma: no-cache
+expires: 0
+x-ratelimit-limit: 100
+x-ratelimit-remaining: 94
+x-ratelimit-reset: 1707397894
+Timing-Allow-Origin: *
+x-received-from: shard-prod-eu-west-1-2
+
+{
+    
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createSpaceTest(String)[3]" classname="pl.akademiaqa.tests.space.CreateSpaceWithParamsTest" time="1.104">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://api.clickup.com/api/v2/team/9005016801/space
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=pk_44666415_BQ3MDY22FN79DULVOS49C7RI9UT3LO73
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "."
+}
+HTTP/1.1 200 OK
+Date: Thu, 08 Feb 2024 13:10:39 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+x-dns-prefetch-control: off
+expect-ct: max-age=0
+strict-transport-security: max-age=31536000; includeSubDomains
+x-download-options: noopen
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+access-control-allow-origin: *
+access-control-allow-credentials: true
+content-language: en-US
+x-datadog-trace-id: 4258392991424820326
+content-security-policy: frame-ancestors 'self'
+cache-control: no-cache, no-store
+pragma: no-cache
+expires: 0
+x-ratelimit-limit: 100
+x-ratelimit-remaining: 93
+x-ratelimit-reset: 1707397894
+Timing-Allow-Origin: *
+content-encoding: gzip
+x-received-from: shard-prod-eu-west-1-2
+
+{
+    "id": "90120427232",
+    "name": ".",
+    "color": null,
+    "private": false,
+    "avatar": null,
+    "admin_can_manage": null,
+    "statuses": [
+        {
+            "id": "p90120427232_tcp79rRa",
+            "status": "to do",
+            "type": "open",
+            "orderindex": 0,
+            "color": "#87909e"
+        },
+        {
+            "id": "p90120427232_SEiLwmch",
+            "status": "complete",
+            "type": "closed",
+            "orderindex": 1,
+            "color": "#008844"
+        }
+    ],
+    "multiple_assignees": false,
+    "features": {
+        "due_dates": {
+            "enabled": true,
+            "start_date": true,
+            "remap_due_dates": true,
+            "remap_closed_due_date": false
+        },
+        "sprints": {
+            "enabled": false
+        },
+        "points": {
+            "enabled": false
+        },
+        "custom_items": {
+            "enabled": false
+        },
+        "checklists": {
+            "enabled": true
+        },
+        "zoom": {
+            "enabled": false
+        },
+        "milestones": {
+            "enabled": false
+        },
+        "remap_dependencies": {
+            "enabled": true
+        },
+        "dependency_warning": {
+            "enabled": true
+        },
+        "status_pies": {
+            "enabled": true
+        },
+        "emails": {
+            "enabled": true
+        }
+    },
+    "archived": false
+}
+Request method:	DELETE
+Request URI:	https://api.clickup.com/api/v2/space/90120427232
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=pk_44666415_BQ3MDY22FN79DULVOS49C7RI9UT3LO73
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 08 Feb 2024 13:10:40 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Server: nginx
+x-dns-prefetch-control: off
+expect-ct: max-age=0
+strict-transport-security: max-age=31536000; includeSubDomains
+x-download-options: noopen
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+access-control-allow-origin: *
+access-control-allow-credentials: true
+content-language: en-US
+x-datadog-trace-id: 1003372586929731743
+content-security-policy: frame-ancestors 'self'
+cache-control: no-cache, no-store
+pragma: no-cache
+expires: 0
+x-ratelimit-limit: 100
+x-ratelimit-remaining: 92
+x-ratelimit-reset: 1707397894
+Timing-Allow-Origin: *
+x-received-from: shard-prod-eu-west-1-2
+
+{
+    
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createSpaceTest(String)[4]" classname="pl.akademiaqa.tests.space.CreateSpaceWithParamsTest" time="1.031">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://api.clickup.com/api/v2/team/9005016801/space
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=pk_44666415_BQ3MDY22FN79DULVOS49C7RI9UT3LO73
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": " "
+}
+HTTP/1.1 200 OK
+Date: Thu, 08 Feb 2024 13:10:40 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+x-dns-prefetch-control: off
+expect-ct: max-age=0
+strict-transport-security: max-age=31536000; includeSubDomains
+x-download-options: noopen
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+access-control-allow-origin: *
+access-control-allow-credentials: true
+content-language: en-US
+x-datadog-trace-id: 6636708035705755643
+content-security-policy: frame-ancestors 'self'
+cache-control: no-cache, no-store
+pragma: no-cache
+expires: 0
+x-ratelimit-limit: 100
+x-ratelimit-remaining: 91
+x-ratelimit-reset: 1707397894
+Timing-Allow-Origin: *
+content-encoding: gzip
+x-received-from: shard-prod-eu-west-1-2
+
+{
+    "id": "90120427233",
+    "name": " ",
+    "color": null,
+    "private": false,
+    "avatar": null,
+    "admin_can_manage": null,
+    "statuses": [
+        {
+            "id": "p90120427233_uAfx1rbK",
+            "status": "to do",
+            "type": "open",
+            "orderindex": 0,
+            "color": "#87909e"
+        },
+        {
+            "id": "p90120427233_M761rKpU",
+            "status": "complete",
+            "type": "closed",
+            "orderindex": 1,
+            "color": "#008844"
+        }
+    ],
+    "multiple_assignees": false,
+    "features": {
+        "due_dates": {
+            "enabled": true,
+            "start_date": true,
+            "remap_due_dates": true,
+            "remap_closed_due_date": false
+        },
+        "sprints": {
+            "enabled": false
+        },
+        "points": {
+            "enabled": false
+        },
+        "custom_items": {
+            "enabled": false
+        },
+        "checklists": {
+            "enabled": true
+        },
+        "zoom": {
+            "enabled": false
+        },
+        "milestones": {
+            "enabled": false
+        },
+        "remap_dependencies": {
+            "enabled": true
+        },
+        "dependency_warning": {
+            "enabled": true
+        },
+        "status_pies": {
+            "enabled": true
+        },
+        "emails": {
+            "enabled": true
+        }
+    },
+    "archived": false
+}
+Request method:	DELETE
+Request URI:	https://api.clickup.com/api/v2/space/90120427233
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=pk_44666415_BQ3MDY22FN79DULVOS49C7RI9UT3LO73
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 08 Feb 2024 13:10:41 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Server: nginx
+x-dns-prefetch-control: off
+expect-ct: max-age=0
+strict-transport-security: max-age=31536000; includeSubDomains
+x-download-options: noopen
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+access-control-allow-origin: *
+access-control-allow-credentials: true
+content-language: en-US
+x-datadog-trace-id: 7428684639806642233
+content-security-policy: frame-ancestors 'self'
+cache-control: no-cache, no-store
+pragma: no-cache
+expires: 0
+x-ratelimit-limit: 100
+x-ratelimit-remaining: 90
+x-ratelimit-reset: 1707397894
+Timing-Allow-Origin: *
+x-received-from: shard-prod-eu-west-1-2
+
+{
+    
+}
+]]></system-out>
+  </testcase>
+  <testcase name="createSpaceTest(String)[5]" classname="pl.akademiaqa.tests.space.CreateSpaceWithParamsTest" time="1.047">
+    <system-out><![CDATA[Request method:	POST
+Request URI:	https://api.clickup.com/api/v2/team/9005016801/space
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=pk_44666415_BQ3MDY22FN79DULVOS49C7RI9UT3LO73
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "name": "0"
+}
+HTTP/1.1 200 OK
+Date: Thu, 08 Feb 2024 13:10:41 GMT
+Content-Type: application/json; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Server: nginx
+x-dns-prefetch-control: off
+expect-ct: max-age=0
+strict-transport-security: max-age=31536000; includeSubDomains
+x-download-options: noopen
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+access-control-allow-origin: *
+access-control-allow-credentials: true
+content-language: en-US
+x-datadog-trace-id: 5381578045532072630
+content-security-policy: frame-ancestors 'self'
+cache-control: no-cache, no-store
+pragma: no-cache
+expires: 0
+x-ratelimit-limit: 100
+x-ratelimit-remaining: 89
+x-ratelimit-reset: 1707397894
+Timing-Allow-Origin: *
+content-encoding: gzip
+x-received-from: shard-prod-eu-west-1-2
+
+{
+    "id": "90120427234",
+    "name": "0",
+    "color": null,
+    "private": false,
+    "avatar": null,
+    "admin_can_manage": null,
+    "statuses": [
+        {
+            "id": "p90120427234_BrV4hqpi",
+            "status": "to do",
+            "type": "open",
+            "orderindex": 0,
+            "color": "#87909e"
+        },
+        {
+            "id": "p90120427234_ZshZNgFU",
+            "status": "complete",
+            "type": "closed",
+            "orderindex": 1,
+            "color": "#008844"
+        }
+    ],
+    "multiple_assignees": false,
+    "features": {
+        "due_dates": {
+            "enabled": true,
+            "start_date": true,
+            "remap_due_dates": true,
+            "remap_closed_due_date": false
+        },
+        "sprints": {
+            "enabled": false
+        },
+        "points": {
+            "enabled": false
+        },
+        "custom_items": {
+            "enabled": false
+        },
+        "checklists": {
+            "enabled": true
+        },
+        "zoom": {
+            "enabled": false
+        },
+        "milestones": {
+            "enabled": false
+        },
+        "remap_dependencies": {
+            "enabled": true
+        },
+        "dependency_warning": {
+            "enabled": true
+        },
+        "status_pies": {
+            "enabled": true
+        },
+        "emails": {
+            "enabled": true
+        }
+    },
+    "archived": false
+}
+Request method:	DELETE
+Request URI:	https://api.clickup.com/api/v2/space/90120427234
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=pk_44666415_BQ3MDY22FN79DULVOS49C7RI9UT3LO73
+				Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Thu, 08 Feb 2024 13:10:42 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 2
+Connection: keep-alive
+Server: nginx
+x-dns-prefetch-control: off
+expect-ct: max-age=0
+strict-transport-security: max-age=31536000; includeSubDomains
+x-download-options: noopen
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+x-xss-protection: 0
+access-control-allow-origin: *
+access-control-allow-credentials: true
+content-language: en-US
+x-datadog-trace-id: 4657921413902296208
+content-security-policy: frame-ancestors 'self'
+cache-control: no-cache, no-store
+pragma: no-cache
+expires: 0
+x-ratelimit-limit: 100
+x-ratelimit-remaining: 88
+x-ratelimit-reset: 1707397894
+Timing-Allow-Origin: *
+x-received-from: shard-prod-eu-west-1-2
+
+{
+    
+}
+]]></system-out>
+  </testcase>
+</testsuite>

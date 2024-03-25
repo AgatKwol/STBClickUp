@@ -1,0 +1,7 @@
+pl\akademiaqa\url\ClickUpUrl.class
+pl\akademiaqa\Dto\response\CreateTaskResponseDto.class
+pl\akademiaqa\properties\ClickUpProperties.class
+pl\akademiaqa\Dto\request\CreateTaskRequestDto.class
+pl\akademiaqa\Dto\response\CreateTaskStatusResponseDto.class
+pl\akademiaqa\Dto\request\UpdateTaskRequestDto.class
+pl\akademiaqa\Dto\response\CreateTaskCreatorResponseDto.class

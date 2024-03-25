@@ -1,0 +1,10 @@
+pl\akademiaqa\requests\BaseRequest.class
+pl\akademiaqa\requests\list\CreateListRequest.class
+pl\akademiaqa\requests\space\DeleteSpaceRequest.class
+pl\akademiaqa\requests\task\CreateTaskRequest.class
+pl\akademiaqa\requests\folder\CreateFolderRequest.class
+pl\akademiaqa\requests\task\UpdateTaskRequest.class
+pl\akademiaqa\tests\e2e\UpdateTaskE2E.class
+pl\akademiaqa\tests\space\CreateSpaceWithParamsTest.class
+pl\akademiaqa\tests\space\CreateSpaceTest.class
+pl\akademiaqa\requests\space\CreateSpaceRequest.class
